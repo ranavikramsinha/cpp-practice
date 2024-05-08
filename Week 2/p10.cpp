@@ -17,25 +17,24 @@ int main()
     int n;
     cin>>n;
 
-    int a[1000];
     int count=1;
 
     for(int i=0; i<n; i++)
     {
-        int b[1000];
+        int a[1000];
 
         for(int j=0; j<i+1; j++)
         {
-            b[j]=count++;
+            a[j]=count++;
         }
 
         if (i%2==0){
-            reverse(b,b+(i+1));
+            reverse(a,a+(i+1));
         }
 
         for (int j=0; j<i+1; j++)
         {
-            cout<<b[j]<<" ";
+            cout<<a[j]<<" ";
         }
 
         cout<<endl;
